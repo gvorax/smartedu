@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site Metas -->
+    <title>School 71</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="host_version">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header tit-up">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">Customer Login</h4>
+          </div>
+          <div class="modal-body customer-box">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li>
+                <a class="active" href="#Login" data-toggle="tab">Login</a>
+              </li>
+              <li>
+                <a href="#Registration" data-toggle="tab">Registration</a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="Login">
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        id="email1"
+                        placeholder="Name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder="Email"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <button
+                        type="submit"
+                        class="btn btn-light btn-radius btn-brd grd1"
+                      >
+                        Submit
+                      </button>
+                      <a class="for-pwd" href="javascript:;"
+                        >Forgot your password?</a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="Registration">
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        placeholder="Name"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        id="mobile"
+                        placeholder="Mobile"
+                        type="email"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input
+                        class="form-control"
+                        id="password"
+                        placeholder="Password"
+                        type="password"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <button
+                        type="button"
+                        class="btn btn-light btn-radius btn-brd grd1"
+                      >
+                        Save &amp; Continue
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-light btn-radius btn-brd grd1"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+      <div class="loader-container">
+        <div class="progress-br float shadow">
+          <div class="progress__item"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand fw-bold text-uppercase"
+            href="index.html"
+            style="font-size: 1.5rem; letter-spacing: 2px; color: #fff"
+          >
+            School 71
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbars-host"
+            aria-controls="navbars-rs-food"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbars-host">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">News </a>
+              </li>
+              <!-- <li class="nav-item ">
+				  <a class="nav-link" href="course-grid-2.html">Lessons</a>
+				</li> -->
+              <li class="nav-item active">
+                <a class="nav-link" href="teachers.html">Teachers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+
+    <div class="all-title-box">
+      <div class="container text-center">
+        <h1>
+          Teachers<span class="m_1"
+            >At School 71, we believe that great teachers inspire great
+            learners. Our team of passionate and experienced educators is
+            dedicated to providing a personalized and enriching learning
+            experience for every student. They are not just instructors but
+            mentors who guide students on their academic and personal
+            journeys</span
+          >
+        </h1>
+      </div>
+    </div>
+
+    <div id="teachers" class="section wb">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher8.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Kukanova Saodat Toygunovna</h3>
+                <span class="post">Director of school 71</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher1.jpg" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Fefelova Оlga Anatolevna</h3>
+                <span class="post">Teacher of junior class</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher2.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Tairova Inna Yureyevna</h3>
+                <span class="post">English teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher3.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Axmadullina Tamila Rashidovna</h3>
+                <span class="post">English teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher4.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Sinsadze Gurami</h3>
+                <span class="post">History teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher5.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Abjemileva Madina Adilevna</h3>
+                <span class="post">Biology teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher6.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Dinara Xamidullaevna</h3>
+                <span class="post">Math teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="our-team">
+              <div class="team-img">
+                <img src="images/teacher7.png" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Melnik Tatyana Viktorovna</h3>
+                <span class="post">Physics teacher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end section -->
+    <div
+      id="testimonials"
+      class="parallax section db parallax-off"
+      style="background-image: url('images/parallax_04.jpg')"
+    >
+      <div class="container">
+        <div class="section-title text-center">
+          <h3>What Our Students and Parents Say</h3>
+          <p>
+            At School 71, we pride ourselves on creating an environment where
+            students thrive both academically and personally. But don’t just
+            take our word for it — hear what our students, parents, and staff
+            have to say about their experience at our school!
+          </p>
+        </div>
+        <!-- end title -->
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="testi-carousel owl-carousel owl-theme">
+              <div class="testimonial clearfix">
+                <div class="testi-meta">
+                  <h4>Dilnoza A.</h4>
+                </div>
+                <div class="desc">
+                  <h3>
+                    <i class="fa fa-quote-left"></i> Parent of two students
+                  </h3>
+                  <p class="lead">
+                    We are so proud to be a part of the School 71 community. The
+                    teachers go above and beyond to ensure that our children are
+                    well-rounded, not just academically but personally as well.
+                    The school’s commitment to excellence is evident in the way
+                    our children have developed critical thinking and leadership
+                    skills.
+                  </p>
+                </div>
+                <!-- end testi-meta -->
+              </div>
+              <!-- end testimonial -->
+
+              <!-- end testimonial -->
+
+              <div class="testimonial clearfix">
+                <div class="testi-meta">
+                  <h4>Ms. Saida N.</h4>
+                </div>
+                <div class="desc">
+                  <h3><i class="fa fa-quote-left"></i>History Teacher</h3>
+                  <p class="lead">
+                    At School 71, we aim to do more than just teach—we inspire.
+                    The support from the administration allows us to innovate
+                    and bring the best out of our students. It’s a privilege to
+                    work in such a positive and forward-thinking educational
+                    environment.
+                  </p>
+                </div>
+                <!-- end testi-meta -->
+              </div>
+              <!-- end testimonial -->
+              <div class="testimonial clearfix">
+                <div class="testi-meta">
+                  <h4>Nodir R.</h4>
+                </div>
+                <div class="desc">
+                  <h3><i class="fa fa-quote-left"></i> Class of 2020</h3>
+                  <p class="lead">
+                    Being a part of School 71 has opened up so many
+                    opportunities for me. From winning science competitions to
+                    participating in international exchange programs, this
+                    school has given me experiences that will shape my future.
+                  </p>
+                </div>
+                <!-- end testi-meta -->
+              </div>
+              <!-- end testimonial -->
+              <div class="testimonial clearfix">
+                <div class="testi-meta">
+                  <h4>Mr. Farrukh B.</h4>
+                </div>
+                <div class="desc">
+                  <h3><i class="fa fa-quote-left"></i> Parent of a graduate</h3>
+                  <p class="lead">
+                    Sending our son to School 71 was the best decision we ever
+                    made. He’s grown academically, but even more importantly,
+                    he’s developed a strong sense of responsibility and
+                    confidence. We are grateful for the nurturing and
+                    challenging environment the school provides.
+                  </p>
+                </div>
+                <!-- end testi-meta -->
+              </div>
+            </div>
+            <!-- end carousel -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-xs-12">
+            <div class="widget clearfix">
+              <div class="widget-title">
+                <h3>About US</h3>
+              </div>
+              <p>
+                At School 71, we envision a community of engaged learners who
+                are inspired to achieve their full potential, academically and
+                beyond. We aim to create a holistic learning environment that
+                encourages innovation, responsibility, and global citizenship.
+              </p>
+            </div>
+            <!-- end clearfix -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-6 col-md-4 col-xs-12">
+            <div class="widget clearfix">
+              <div class="widget-title">
+                <h3>Information Link</h3>
+              </div>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+              <!-- end links -->
+            </div>
+            <!-- end clearfix -->
+          </div>
+          <!-- end col -->
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+      <div class="container">
+        <div class="footer-distributed">
+          <div class="footer-center">
+            <p class="footer-company-name">
+              All Rights Reserved. &copy; 2024 <a href="#">School 71</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end container -->
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
